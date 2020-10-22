@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <h2>v-model</h2>
+  <section>
+    <h2>input 창에서 v-model 사용</h2>
     <input v-model="message" type="text">
     <p>메세지: {{ message }}</p>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -16,7 +16,3 @@ export default {
   },
 }
 </script>
-
-<style>
-
-</style>
