@@ -6,6 +6,7 @@
     <!-- input, textarea 태그 v-model = 'v-on:input' + 'v-bind:value'의 조합 -->
     <textarea @input="korTypingText" :value="korText" type="text" class="kor-textarea"></textarea>
     <p>메세지: {{ korText }}</p>
+    <button @click="showText">show!</button>
   </section>
 </template>
 
@@ -24,6 +25,9 @@ export default {
     },
     korTypingText(e) {
       this.korText = e.target.value;
+    },
+    showText() {
+      alert(this.korMessage);
     }
   }
 }
