@@ -1,5 +1,6 @@
 <template>
   <section>
+    <h2>checkbox type의 input 창에서 v-model 사용</h2>
     <input type="checkbox" id="save-id" v-model="check">
     <label for="save-id">아이디 저장</label>
     <p>체크 확인: {{ check }}</p>
